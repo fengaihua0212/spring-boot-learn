@@ -23,9 +23,9 @@ import java.util.Map;
 public class HelloController {
     private static final ThreadLocal<Integer> currentUser = ThreadLocal.withInitial(() -> null);
 
-    @GetMapping("say")
+    @GetMapping("/say")
     @ApiOperation(value = "say", notes = "say test")
-    public String say(String name, int age) {
+    public String say(String name, Integer age) {
         return "hello world!";
     }
 
