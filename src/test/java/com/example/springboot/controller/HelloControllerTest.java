@@ -27,6 +27,9 @@ class HelloControllerTest {
     }
 
     @Test
-    void wrong() {
+    void wrong(@Autowired MockMvc mockMvc) throws Exception {
+        mockMvc.perform(MockMvcRequestBuilders.get("/hello/wrong").param("userId", String.valueOf(10086)))
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.content().json("{\"before\"=\"main:null\", \"after\"=\"main:10086\"}"));
     }
 }
