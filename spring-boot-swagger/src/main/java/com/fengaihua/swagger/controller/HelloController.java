@@ -12,8 +12,7 @@ import java.util.Map;
 
 /**
  * @author fengaihua
- * @project springboot
- * @package com.example.springboot.controller
+ * @package com.fengaihua.swagger.controller
  * @date 2019/12/23 17:07
  * @description
  */

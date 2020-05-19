@@ -13,8 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * @author fengaihua
- * @project springboot
- * @package com.example.springboot.configuration
+ * @package com.fengaihua.swagger.configuration
  * @date 2019/12/23 16:40
  * @description
  */

@@ -9,7 +9,7 @@ import org.springframework.scheduling.quartz.QuartzJobBean;
 /**
  * @author fengaihua
  * @project springboot
- * @package com.example.springboot.quartz
+ * @package com.fengaihua.quartz.task
  * @date 2020/5/15 13:50
  * @description
  */
