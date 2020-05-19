@@ -1,4 +1,4 @@
-package com.example.springboot.configuration;
+package com.fengaihua.swagger.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -27,7 +27,7 @@ public class SwaggerConfiguration {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(this.apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.springboot.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.fengaihua.swagger.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -37,7 +37,7 @@ public class SwaggerConfiguration {
                 .title("测试接口文档示例")
                 .description("")
                 .version("1.0.0")
-                .contact(new Contact("ghostmanhua","http://www.baidu.com","869924383@qq.com"))
+                .contact(new Contact("fengaihua", "http://www.baidu.com", "fengaihua0212@gmail.com"))
                 .build();
     }
 }
